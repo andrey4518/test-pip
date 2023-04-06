@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='test_pip',
-    version='0.0.3',
+    version='0.0.4',
     install_requires=[
         "protobuf==4.22.1"
     ],
@@ -12,4 +12,5 @@ setup(
         include=['proto*'],  # ['*'] by default
         # exclude=['mypackage.tests'],  # empty by default
     ),
+    include_package_data=True
 )
