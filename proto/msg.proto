@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+option go_package = "service/proto";
+
+message Request {
+    string request_id = 1;
+    string data = 2;
+}
+
+message Response {
+    string request_id = 1;
+    string datas = 2;
+}
